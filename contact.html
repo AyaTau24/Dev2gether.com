@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+            <nav class="navbar section-content">
+                <div class="logo">
+                    <img src="images/ChatGPT Image Aug 7, 2025, 08_03_18 PM.png" alt="Dev2gether logo" class="logo-img">
+                    <h2 class="logo-text">Dev2gether</h2>
+                </div>    
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="tictac.html" class="nav-link">TicTac Toe</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="6324a0bf-bdf4-4535-b758-aae47fcf6c54">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit </button>
+           
+         </form>
+        <div class="contact-right">
+           <img src="images/email icon.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Track Your Progress</h2>
+
+    <!-- Task Name -->
+    <input type="text" id="task-name" placeholder="Enter task name (e.g. Reading)">
+    
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">No task set</div>
+    </div>
+
+    <!-- User Input for Progress -->
+    <input type="number" id="progress-input" placeholder="Enter % (0-100)" min="0" max="100">
+    <button id="set-progress">Set Progress</button>
+    <button id="increase-progress">Increase +10%</button>
+
+    <script src="progress_bar.js"></script>
+</body>
+</html>

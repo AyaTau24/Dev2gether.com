@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartoonic To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>✨ My Cartoonic To-Do List</h1>
+      <p class="subtitle">Write what you need to do, tick when it's done — colorful & fun!</p>
+    </header>
+
+    <section class="composer">
+      <input id="taskInput" type="text" placeholder="Add a task... e.g. Finish my calculator project" aria-label="New task input">
+      <button id="addBtn" class="add-btn">Add</button>
+    </section>
+
+    <section class="controls">
+      <div class="stats">
+        <span id="total">0</span> tasks · <span id="done">0</span> done
+      </div>
+      <div class="filters">
+        <button data-filter="all" class="filter active">All</button>
+        <button data-filter="active" class="filter">Active</button>
+        <button data-filter="completed" class="filter">Completed</button>
+      </div>
+    </section>
+
+    <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+    <footer class="footer">
+      <div class="progress">
+        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="footer-actions">
+        <button id="clearCompleted" class="ghost">Clear completed</button>
+        <button id="clearAll" class="ghost">Clear all</button>
+      </div>
+    </footer>
+  </main>
+
+  <script src="to-do-list.js"></script>
+</body>
+</html>

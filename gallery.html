@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <nav class="navbar section-content">
+                <div class="logo">
+                    <img src="images/ChatGPT Image Aug 7, 2025, 08_03_18 PM.png" alt="Dev2gether logo" class="logo-img">
+                    <h2 class="logo-text">Dev2gether</h2>
+                </div> 
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="tictac.html" class="nav-link">TicTac Toe</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+    </header>
+    <!--Title Section-->
+    <section class="page-title">
+        <h1>Gallery</h1>
+    </section>
+    
+    <div class="full-img" id="fullImgBox"> 
+        <img src="images/codes.jpeg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="images/coding.jpg" onclick="openFullImg(this.src)">
+        <img src="images/code quote.webp" onclick="openFullImg(this.src)">
+        <img src="images/code.jpeg" onclick="openFullImg(this.src)">
+        <img src="images/ChatGPT Image Aug 8, 2025, 05_55_53 PM.png" onclick="openFullImg(this.src)">
+        <img src="images/computer code.jpg" onclick="openFullImg(this.src)">
+        <img src="images/love.png" onclick="openFullImg(this.src)">
+        <img src="images/developer.jpg" onclick="openFullImg(this.src)">
+        <img src="images/repeat code.jpg" onclick="openFullImg(this.src)">
+        <img src="images/ChatGPT Image Aug 8, 2025, 02_58_55 PM.png" onclick="openFullImg(this.src)">
+        <img src="images/coding.jpg" onclick="openFullImg(this.src)">
+        <img src="images/code quote.webp" onclick="openFullImg(this.src)">
+    </div>
+   
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+           fullImgBox.style.display = "flex" 
+           fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none"; 
+        }
+    </script>
+</body>
+</html>
